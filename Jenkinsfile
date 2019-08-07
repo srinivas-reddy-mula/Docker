@@ -10,6 +10,7 @@ node('docker')
     sh 'pwd'
     sh 'ls -lart'
     sh 'whoami'
+    sh 'chmod 755 docker_install.sh'
     sh '/home/jenkins/workspace/dockerpipe/docker_install.sh'
     sh 'sudo usermod -aG docker jenkins'
     }
