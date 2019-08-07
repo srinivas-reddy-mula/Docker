@@ -2,7 +2,8 @@ node('docker')
 {
     stage('Git')
     {
-        git 'https://github.com/srinivas-reddy-mula/Docker.git'
+       sh 'pwd'
+       sh 'git 'https://github.com/srinivas-reddy-mula/Docker.git'
     }
     stage('install docker')
     {
