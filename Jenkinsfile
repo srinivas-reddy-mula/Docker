@@ -8,6 +8,7 @@ node('docker')
     stage('install docker')
     {
     sh 'pwd'
+    sh 'ls -lart'
     sh 'whoami'
     sh 'docker_install.sh'
     sh 'sudo usermod -aG docker jenkins'
